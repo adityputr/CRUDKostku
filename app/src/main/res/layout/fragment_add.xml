@@ -19,7 +19,7 @@
         app:layout_constraintHorizontal_bias="0.494"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.316" />
+        app:layout_constraintVertical_bias="0.397" />
 
     <EditText
         android:id="@+id/editAlamatKos"
@@ -33,18 +33,43 @@
         app:layout_constraintHorizontal_bias="0.494"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/editNamaKos"
-        app:layout_constraintVertical_bias="0.118" />
+        app:layout_constraintVertical_bias="0.039" />
 
     <Button
         android:id="@+id/btnSend"
         android:layout_width="320dp"
         android:layout_height="45dp"
+        android:layout_marginBottom="160dp"
         android:text="Masukan Data"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.494"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/editAlamatKos"
-        app:layout_constraintVertical_bias="0.267" />
+        app:layout_constraintVertical_bias="1.0" />
+
+    <ImageView
+        android:id="@+id/imageAdd"
+        android:layout_width="121dp"
+        android:layout_height="112dp"
+        android:layout_marginBottom="32dp"
+        app:layout_constraintBottom_toTopOf="@+id/editNamaKos"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.155"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="1.0"
+        tools:src="@drawable/ic_sponbob" />
+
+    <Button
+        android:id="@+id/btnPickImage"
+        android:layout_width="132dp"
+        android:layout_height="45dp"
+        android:layout_marginBottom="68dp"
+        android:text="Pick Image"
+        app:layout_constraintBottom_toTopOf="@+id/editNamaKos"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.367"
+        app:layout_constraintStart_toEndOf="@+id/imageAdd" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
