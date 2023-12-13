@@ -10,6 +10,7 @@
     android:background="#EF93FF">
 
     <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/rv_container"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:padding="20dp">
