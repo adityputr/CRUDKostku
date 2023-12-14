@@ -43,5 +43,9 @@
         <argument
             android:name="alamat"
             app:argType="string" />
+        <argument
+            android:name="imageUrl"
+            app:argType="string"
+            app:nullable="true" />
     </fragment>
 </navigation>
