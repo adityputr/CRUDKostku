@@ -47,5 +47,8 @@
             android:name="imageUrl"
             app:argType="string"
             app:nullable="true" />
+        <argument
+            android:name="harga"
+            app:argType="string" />
     </fragment>
 </navigation>

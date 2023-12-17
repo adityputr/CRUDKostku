@@ -47,11 +47,20 @@
                 android:textStyle="bold" />
 
             <TextView
-                android:id="@+id/tvId"
+                android:id="@+id/tvHarga"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginStart="5dp"
                 android:layout_marginTop="60dp"
+                android:text="Harga"
+                android:textSize="20sp" />
+
+            <TextView
+                android:id="@+id/tvId"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="5dp"
+                android:layout_marginTop="88dp"
                 android:text="ID"
                 android:textSize="20sp" />
         </androidx.cardview.widget.CardView>

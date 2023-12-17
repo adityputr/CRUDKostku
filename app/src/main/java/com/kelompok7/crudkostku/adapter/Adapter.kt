@@ -33,6 +33,7 @@ class Adapter(private val kostList : java.util.ArrayList<Kost>) : RecyclerView.A
                 tvNama.text = currentItem.nama
                 tvAlamat.text = currentItem.alamat
                 tvId.text = currentItem.id
+                tvHarga.text = currentItem.harga
                 Picasso.get().load(currentItem.imgUrl).into(tvImage)
                 rvContainer.setOnClickListener{
 
@@ -40,7 +41,8 @@ class Adapter(private val kostList : java.util.ArrayList<Kost>) : RecyclerView.A
                         currentItem.id.toString(),
                         currentItem.nama.toString(),
                         currentItem.alamat.toString(),
-                        currentItem.imgUrl.toString()
+                        currentItem.imgUrl.toString(),
+                        currentItem.harga.toString()
                     )
                     findNavController(holder.itemView).navigate(action)
                 }

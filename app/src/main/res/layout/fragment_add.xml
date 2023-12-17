@@ -33,7 +33,21 @@
         app:layout_constraintHorizontal_bias="0.494"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/editNamaKos"
-        app:layout_constraintVertical_bias="0.039" />
+        app:layout_constraintVertical_bias="0.093" />
+
+    <EditText
+        android:id="@+id/editHargaKos"
+        android:layout_width="320dp"
+        android:layout_height="45dp"
+        android:ems="10"
+        android:hint="Harga"
+        android:inputType="text"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.494"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/editAlamatKos"
+        app:layout_constraintVertical_bias="0.105" />
 
     <Button
         android:id="@+id/btnSend"

@@ -47,10 +47,12 @@ class AddFragment : Fragment() {
     private fun saveData() {
         val nama = binding.editNamaKos.text.toString()
         val alamat = binding.editAlamatKos.text.toString()
+        val harga = binding.editHargaKos.text.toString()
 
 
         if (nama.isEmpty()) binding.editNamaKos.error = "Masukan nama kos!"
         if (alamat.isEmpty()) binding.editAlamatKos.error = "Masukan alamat kos!"
+        if (harga.isEmpty()) binding.editHargaKos.error = "Masukan harga kos!"
 
 
         val kostId = firebaseRef.push().key!!
@@ -63,7 +65,7 @@ class AddFragment : Fragment() {
                         .addOnSuccessListener { url ->
                             val imgUrl = url.toString()
 
-                            kost = Kost( kostId, nama, alamat, imgUrl)
+                            kost = Kost( kostId, nama, alamat, imgUrl, harga)
 
                             firebaseRef.child(kostId).setValue(kost)
                                 .addOnCompleteListener{
