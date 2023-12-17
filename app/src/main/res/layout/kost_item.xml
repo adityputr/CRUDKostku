@@ -42,7 +42,7 @@
                 android:layout_height="wrap_content"
                 android:layout_marginStart="5dp"
                 android:layout_marginTop="33dp"
-                android:text="Alamat"
+                android:text="Fasilitas"
                 android:textSize="20sp"
                 android:textStyle="bold" />
 
@@ -63,6 +63,25 @@
                 android:layout_marginTop="88dp"
                 android:text="ID"
                 android:textSize="20sp" />
+
+            <TextView
+                android:id="@+id/tvWatsap"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="5dp"
+                android:layout_marginTop="118dp"
+                android:text="WhatsApp"
+                android:textSize="20sp" />
+
+            <TextView
+                android:id="@+id/tvGmaps"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="5dp"
+                android:layout_marginTop="148dp"
+                android:text="Lokasi"
+                android:textSize="20sp" />
+
         </androidx.cardview.widget.CardView>
 
         <ImageView

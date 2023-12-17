@@ -50,5 +50,11 @@
         <argument
             android:name="harga"
             app:argType="string" />
+        <argument
+            android:name="watsap"
+            app:argType="string" />
+        <argument android:name="gmaps"
+            app:argType="string"
+            app:nullable="true" />
     </fragment>
 </navigation>

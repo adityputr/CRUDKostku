@@ -25,9 +25,9 @@
         android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:id="@+id/editUpdateAlamat"
-        android:layout_marginTop="84dp"
+        android:layout_marginTop="30dp"
         android:ems="10"
-        android:hint="Masukan Alamat"
+        android:hint="Masukan Deskripsi"
         android:inputType="text"
         android:textSize="20sp"
         app:layout_constraintEnd_toEndOf="parent"
@@ -38,7 +38,7 @@
         android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:id="@+id/editUpdateHarga"
-        android:layout_marginTop="84dp"
+        android:layout_marginTop="30dp"
         android:ems="10"
         android:hint="Masukan Harga"
         android:inputType="text"
@@ -47,16 +47,43 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@id/editUpdateAlamat"/>
 
+    <EditText
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:id="@+id/editUpdateWA"
+        android:layout_marginTop="30dp"
+        android:ems="10"
+        android:hint="Masukan link WhatsApp wa.me/"
+        android:inputType="text"
+        android:textSize="20sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/editUpdateHarga"/>
+
+    <EditText
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:id="@+id/editUpdateLokasi"
+        android:layout_marginTop="30dp"
+        android:ems="10"
+        android:hint="Masukan link Maps"
+        android:inputType="text"
+        android:textSize="20sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/editUpdateWA"/>
+
     <Button
         android:id="@+id/btnUpdate"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:text="Update"
+        android:inputType="textWebEmailAddress"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/editUpdateHarga"
+        app:layout_constraintTop_toBottomOf="@+id/editUpdateLokasi"
         app:layout_constraintVertical_bias="0.332" />
 
     <ImageView

@@ -53,6 +53,8 @@ class UpdateFragment : Fragment() {
             editUpdateNama.setText(args.nama)
             editUpdateAlamat.setText(args.alamat)
             editUpdateHarga.setText(args.harga)
+            editUpdateWA.setText(args.watsap)
+            editUpdateLokasi.setText(args.gmaps)
             Picasso.get().load(imageUrl).into(imgUpdate)
 
             btnUpdate.setOnClickListener{
@@ -85,6 +87,8 @@ class UpdateFragment : Fragment() {
         val nama = binding.editUpdateNama.text.toString()
         val alamat = binding.editUpdateAlamat.text.toString()
         val harga = binding.editUpdateHarga.text.toString()
+        val watsap = binding.editUpdateWA.text.toString()
+        val gmaps = binding.editUpdateLokasi.text.toString()
         var kost: Kost
 
         if (uri != null) {
@@ -93,7 +97,7 @@ class UpdateFragment : Fragment() {
                     task.metadata!!.reference!!.downloadUrl
                         .addOnSuccessListener { url ->
                             imageUrl = url.toString()
-                            kost = Kost(args.id, nama, alamat, imageUrl, harga)
+                            kost = Kost(args.id, nama, alamat, imageUrl, harga, watsap, gmaps)
                             firebaseRef.child(args.id).setValue(kost)
                                 .addOnCompleteListener {
                                     Toast.makeText(
@@ -114,7 +118,7 @@ class UpdateFragment : Fragment() {
 
         }
         if (uri == null){
-            kost = Kost(args.id, nama, alamat, imageUrl, harga)
+            kost = Kost(args.id, nama, alamat, imageUrl, harga, watsap, gmaps)
             firebaseRef.child(args.id).setValue(kost)
                 .addOnCompleteListener {
                     Toast.makeText(

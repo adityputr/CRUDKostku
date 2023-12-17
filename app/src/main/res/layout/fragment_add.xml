@@ -26,7 +26,7 @@
         android:layout_width="320dp"
         android:layout_height="45dp"
         android:ems="10"
-        android:hint="Alamat Kos"
+        android:hint="Deskripsi Kos"
         android:inputType="text"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
@@ -49,17 +49,45 @@
         app:layout_constraintTop_toBottomOf="@+id/editAlamatKos"
         app:layout_constraintVertical_bias="0.105" />
 
+    <EditText
+        android:id="@+id/editWAKos"
+        android:layout_width="320dp"
+        android:layout_height="45dp"
+        android:ems="10"
+        android:hint="WhatsApp wa.me/"
+        android:inputType="text"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.494"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/editHargaKos"
+        app:layout_constraintVertical_bias="0.134" />
+
+    <EditText
+        android:id="@+id/editLokasiKos"
+        android:layout_width="320dp"
+        android:layout_height="45dp"
+        android:ems="10"
+        android:hint="Lokasi GMaps"
+        android:inputType="textWebEmailAddress"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.494"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/editWAKos"
+        app:layout_constraintVertical_bias="0.206" />
+
     <Button
         android:id="@+id/btnSend"
         android:layout_width="320dp"
         android:layout_height="45dp"
-        android:layout_marginBottom="160dp"
+        android:layout_marginBottom="80dp"
         android:text="Masukan Data"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.494"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/editAlamatKos"
+        app:layout_constraintTop_toBottomOf="@+id/editLokasiKos"
         app:layout_constraintVertical_bias="1.0" />
 
     <ImageView
