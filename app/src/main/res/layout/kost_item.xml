@@ -7,7 +7,7 @@
     app:cardCornerRadius="10dp"
     android:elevation="10dp"
     android:layout_margin="10dp"
-    android:background="#EF93FF">
+    android:background="@color/white">
 
     <androidx.constraintlayout.widget.ConstraintLayout
         android:id="@+id/rv_container"
@@ -33,54 +33,72 @@
                 android:layout_marginStart="5dp"
                 android:layout_marginTop="2dp"
                 android:text="Nama"
+                android:textColor="@color/birungu"
+                android:fontFamily="@font/poppins_bold"
                 android:textSize="20sp"
                 android:textStyle="bold" />
 
-            <TextView
-                android:id="@+id/tvAlamat"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_marginStart="5dp"
-                android:layout_marginTop="33dp"
-                android:text="Fasilitas"
-                android:textSize="20sp"
-                android:textStyle="bold" />
+<!--            <TextView-->
+<!--                android:id="@+id/tvAlamat"-->
+<!--                android:layout_width="wrap_content"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:layout_marginStart="5dp"-->
+<!--                android:layout_marginTop="33dp"-->
+<!--                android:text="Fasilitas"-->
+<!--                android:textSize="20sp"-->
+<!--                android:textStyle="bold" />-->
 
             <TextView
                 android:id="@+id/tvHarga"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginStart="5dp"
-                android:layout_marginTop="60dp"
+                android:fontFamily="@font/poppins_regular"
+                android:layout_marginTop="50dp"
                 android:text="Harga"
+                android:textColor="@color/birungu"
                 android:textSize="20sp" />
 
             <TextView
-                android:id="@+id/tvId"
+                android:id="@+id/tvKategori"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginStart="5dp"
-                android:layout_marginTop="88dp"
-                android:text="ID"
+                android:fontFamily="@font/poppins_regular"
+                android:layout_marginTop="95dp"
+                android:text="Kategori"
+                android:textColor="@color/birungu"
+
                 android:textSize="20sp" />
 
-            <TextView
-                android:id="@+id/tvWatsap"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_marginStart="5dp"
-                android:layout_marginTop="118dp"
-                android:text="WhatsApp"
-                android:textSize="20sp" />
 
-            <TextView
-                android:id="@+id/tvGmaps"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_marginStart="5dp"
-                android:layout_marginTop="148dp"
-                android:text="Lokasi"
-                android:textSize="20sp" />
+
+            <!--            <TextView-->
+<!--                android:id="@+id/tvId"-->
+<!--                android:layout_width="wrap_content"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:layout_marginStart="5dp"-->
+<!--                android:layout_marginTop="88dp"-->
+<!--                android:text="ID"-->
+<!--                android:textSize="20sp" />-->
+
+<!--            <TextView-->
+<!--                android:id="@+id/tvWatsap"-->
+<!--                android:layout_width="wrap_content"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:layout_marginStart="5dp"-->
+<!--                android:layout_marginTop="118dp"-->
+<!--                android:text="WhatsApp"-->
+<!--                android:textSize="20sp" />-->
+
+<!--            <TextView-->
+<!--                android:id="@+id/tvGmaps"-->
+<!--                android:layout_width="wrap_content"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:layout_marginStart="5dp"-->
+<!--                android:layout_marginTop="148dp"-->
+<!--                android:text="Lokasi"-->
+<!--                android:textSize="20sp" />-->
 
         </androidx.cardview.widget.CardView>
 
@@ -93,7 +111,7 @@
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent"
             app:layout_constraintVertical_bias="0.571"
-            app:srcCompat="@drawable/ic_sponbob" />
+            app:srcCompat="@drawable/ic_profile"/>
 
     </androidx.constraintlayout.widget.ConstraintLayout>
 

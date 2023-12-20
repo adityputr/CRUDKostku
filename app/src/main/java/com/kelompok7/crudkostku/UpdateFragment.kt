@@ -1,6 +1,5 @@
 package com.kelompok7.crudkostku
 
-import android.app.ProgressDialog.show
 import android.net.Uri
 import android.os.Bundle
 import androidx.fragment.app.Fragment
@@ -55,6 +54,7 @@ class UpdateFragment : Fragment() {
             editUpdateHarga.setText(args.harga)
             editUpdateWA.setText(args.watsap)
             editUpdateLokasi.setText(args.gmaps)
+            editUpdateKategori.setText(args.kategori)
             Picasso.get().load(imageUrl).into(imgUpdate)
 
             btnUpdate.setOnClickListener{
@@ -89,6 +89,7 @@ class UpdateFragment : Fragment() {
         val harga = binding.editUpdateHarga.text.toString()
         val watsap = binding.editUpdateWA.text.toString()
         val gmaps = binding.editUpdateLokasi.text.toString()
+        val kategori = binding.editUpdateKategori.text.toString()
         var kost: Kost
 
         if (uri != null) {
@@ -97,7 +98,7 @@ class UpdateFragment : Fragment() {
                     task.metadata!!.reference!!.downloadUrl
                         .addOnSuccessListener { url ->
                             imageUrl = url.toString()
-                            kost = Kost(args.id, nama, alamat, imageUrl, harga, watsap, gmaps)
+                            kost = Kost(args.id, nama, alamat, imageUrl, harga, watsap, gmaps, kategori)
                             firebaseRef.child(args.id).setValue(kost)
                                 .addOnCompleteListener {
                                     Toast.makeText(
@@ -118,7 +119,7 @@ class UpdateFragment : Fragment() {
 
         }
         if (uri == null){
-            kost = Kost(args.id, nama, alamat, imageUrl, harga, watsap, gmaps)
+            kost = Kost(args.id, nama, alamat, imageUrl, harga, watsap, gmaps, kategori)
             firebaseRef.child(args.id).setValue(kost)
                 .addOnCompleteListener {
                     Toast.makeText(

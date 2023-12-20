@@ -56,5 +56,8 @@
         <argument android:name="gmaps"
             app:argType="string"
             app:nullable="true" />
+        <argument
+            android:name="kategori"
+            app:argType="string" />
     </fragment>
 </navigation>

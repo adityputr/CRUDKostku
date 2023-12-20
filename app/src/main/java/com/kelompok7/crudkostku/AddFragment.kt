@@ -49,14 +49,15 @@ class AddFragment : Fragment() {
         val alamat = binding.editAlamatKos.text.toString()
         val harga = binding.editHargaKos.text.toString()
         val watsap = binding.editWAKos.text.toString()
-        val gmaps = binding.editLokasiKos.toString()
-
+        val gmaps = binding.editLokasiKos.text.toString()
+        val kategori = binding.editKategoriKos.text.toString()
 
         if (nama.isEmpty()) binding.editNamaKos.error = "Masukan nama kos!"
         if (alamat.isEmpty()) binding.editAlamatKos.error = "Masukan fasilitas kos!"
         if (harga.isEmpty()) binding.editHargaKos.error = "Masukan harga kos!"
         if (watsap.isEmpty()) binding.editWAKos.error = "Masukan Nomor WA kos!"
         if (gmaps.isEmpty()) binding.editLokasiKos.error = "Masukan lokasi GMaps kos!"
+        if (kategori.isEmpty()) binding.editKategoriKos.error = "Masukan kategori kos!"
 
 
         val kostId = firebaseRef.push().key!!
@@ -69,7 +70,7 @@ class AddFragment : Fragment() {
                         .addOnSuccessListener { url ->
                             val imgUrl = url.toString()
 
-                            kost = Kost( kostId, nama, alamat, imgUrl, harga, watsap, gmaps)
+                            kost = Kost( kostId, nama, alamat, imgUrl, harga, watsap, gmaps, kategori)
 
                             firebaseRef.child(kostId).setValue(kost)
                                 .addOnCompleteListener{
